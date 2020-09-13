@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+  <style> 
+    html * {
+      font-family: 'East Sea Dokdo', cursive;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .container-fluid img {
+       filter: brightness(50%);
+    }
+    .centered {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+    .thumbnail {
+       position: relative;
+    }
+
+    .caption {
+       position: absolute;
+       margin: 0;
+       top: 15%;
+       left: 30%;
+       margin-right: -70%;
+       transform: translate(-50%, -50%);
+       color:black;
+       font-size: xx-large;
+       background: rgba(232, 235, 238, 0.829); 
+       text-align: center;
+       padding-left: 2%;
+       padding-right: 2%;
+       padding-top: 1%;
+
+    }
+    .caption1 {
+       position: absolute;
+       margin: 0;
+       top: 66%;
+       left: 50%;
+       margin-right: -50%;
+       transform: translate(-50%, -50%);
+       color:blakc;
+       font-size: xx-large;
+       background: rgba(232, 235, 238, 0.829); 
+       text-align: center;
+       padding-left: 2%;
+       padding-right: 2%;
+       padding-top: 1%;
+
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    #homepagetitletwo {
+      text-align: center;
+      font-size: 60px;
+      padding-top: 1%;
+    }
+    .site-footer
+    {
+      background-color:rgba(52, 58, 64, 1);
+      padding: 25px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#737373;
+    }
+    .site-footer hr
+    {
+      border-top-color:#bbb;
+      opacity:0.5
+    }
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h6
+    {
+      color:#fff;
+      font-size:16px;
+      text-transform:uppercase;
+      margin-top:5px;
+      letter-spacing:2px
+    }
+    .site-footer a
+    {
+      color:#737373;
+    }
+    .site-footer a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:0;
+      list-style:none;
+      color: #ffffff;
+    }
+    .footer-links li
+    {
+      display:block
+    }
+    .footer-links a
+    {
+      color:#ffffff
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+    .site-footer .social-icons
+    {
+      text-align:right
+    }
+    .site-footer .social-icons a
+    {
+      width:40px;
+      height:40px;
+      line-height:40px;
+      margin-left:6px;
+      margin-right:0;
+      border-radius:100%;
+      background-color:#33353d
+    }
+    .copyright-text
+    {
+      margin:0
+    }
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:30px
+      }
+    }
+    @media (max-width:767px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center
+      }
+    }
+    .social-icons
+    {
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none
+    }
+    .social-icons li
+    {
+      display:inline-block;
+      margin-bottom:4px
+    }
+    .social-icons li.title
+    {
+      margin-right:15px;
+      text-transform:uppercase;
+      color:#96a2b2;
+      font-weight:700;
+      font-size:13px
+    }
+    .social-icons a{
+      background-color:#eceeef;
+      color:#818a91;
+      font-size:16px;
+      display:inline-block;
+      line-height:44px;
+      width:44px;
+      height:44px;
+      text-align:center;
+      margin-right:8px;
+      border-radius:100%;
+      -webkit-transition:all .2s linear;
+      -o-transition:all .2s linear;
+      transition:all .2s linear
+    }
+    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+    {
+      color:#fff;
+      background-color:#29aafe
+    }
+    .social-icons.size-sm a
+    {
+      line-height:34px;
+      height:34px;
+      width:34px;
+      font-size:14px
+    }
+    .social-icons a.facebook:hover
+    {
+      background-color:#3b5998
+    }
+    .social-icons a.twitter:hover
+    {
+      background-color:#00aced
+    }
+    .social-icons a.linkedin:hover
+    {
+      background-color:#007bb6
+    }
+    .social-icons a.dribbble:hover
+    {
+      background-color:#ea4c89
+    }
+    @media (max-width:767px)
+    {
+      .social-icons li.title
+      {
+        display:block;
+        margin-right:0;
+        font-weight:600
+      }
+    }
+    .card-header {
+      text-decoration: underline;
+      font-size: 23px;
+    }
+    #menuitemsubtext {
+      font-style: italic;
+      font-size: 14px;
+    }
+    #locationmain {
+      padding-top: 5%;
+    }
+    #locationmain p {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    h5 {
+      color: wheat;
+      padding-bottom: 10%;
+      font-size: 10px;
+    }
+    iframe {
+      padding-top: 1%;
+      margin-left: 0%;
+      margin-right: 5%;
+      padding-right: 4%;
+    }
+    label {
+      color: wheat;
+    }
+    #dropdownmenu {
+      color: wheat;
+      background-color: wheat;
+    }
+    /* ============ only desktop view ============ */
+    @media all and (min-width: 992px) {
+      .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+      .navbar .nav-item:hover .nav-link{ color: #fff;  }
+      .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+      .navbar .dropdown-menu.fade-up{ top:180%;  }
+      .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+    }		
+
+    
+
+  </style>
+  <head>
+    <title>JOK BAL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+</head>
+  <body style="background-color: rgba(52, 58, 64, 1);">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">
+          <img src="img/pig.jpg" width="30" height="30" class="d-inline-block align-top" alt="jokballogo" loading="lazy">
+          JOK<span style="color: wheat">BAL</span> 10<span style="color: wheat">30</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="location.html"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="placeorder" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Place Online Order</a>
+                <div class="dropdown-menu dropdown-menu-right fade-up" role="menu" aria-labelledby="placeorder" id=dropdownmenu>
+                  <a class="dropdown-item" id="tab1" href="#" tabindex="-1" role="tab" data-toggle="modal" data-target="#myModal" aria-controls="">
+                      <i class="fa fa-chevron-circle-right"></i> Pickup</a>
+                  <a class="dropdown-item" id="tab2" href="#" tabindex="-1" role="tab" data-toggle="modal" data-target="#myModal" aria-controls="">
+                      <i class="fa fa-chevron-circle-right"></i> Delivery</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Connect to a 3rd Party Service!</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p> Third Party Ordering Apps:</p>
+            <h6><a href="https://www.ubereats.com/restaurant/en-US/signup">UberEats</a>,
+              <a href="https://get.grubhub.com/">GrubHub</a>
+              <a href="https://postmates.com/partner">PostMates</a>
+              <a href="https://get.chownow.com/demo/">ChowNow</a>
+            </h6>
+            <p>Third Party POS Systems:</p>
+            <h6>
+              <a href="https://www.ubereats.com/restaurant/en-US/signup">Shopkeep</a>,
+              <a href="https://www.ubereats.com/restaurant/en-US/signup">TOAST POS</a>,
+              <a href="https://www.ubereats.com/restaurant/en-US/signup">TouchBistro POS</a>,
+              <a href="https://www.ubereats.com/restaurant/en-US/signup">Square POS</a>,
+            </h6>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- MID SECTION -->
+    <div class=container id=locationmain>
+      <div class='row'>
+        <div class="col-md-3 px-2">
+          <p>Address</p>
+          <h5>3465 W 6th St Ste 65, Los Angeles, CA 90020</h5>
+          <p>Hours</p>
+          <ul class="footer-links">
+            <li><i class="fa fa-check" aria-hidden="true"></i> Mon-Thurs: 11am - 1am</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> Friday: 10am - 3am</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> Saturday: 9am - 3am</li>
+            <li style="color:rgb(199, 67, 67)"><i class="fa fa-times" aria-hidden="true"></i> Sunday: Closed</li>
+            
+          </ul>
+          <p>Email</p>
+          <h5>jokballa@gmail.com</h5>
+          <p>Phone Number</p>
+          <h5>+214-577-0714</56>
+          
+        </div>
+        
+        <div class="col-lg-6 px-2" style="width: 500px; height: 412px; background-color: wheat;"><iframe width="575" height="405" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Jokbal%201030,%203465%20W%206th%20St%20Ste%2065%20L.A.+(Jokbal)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe> <a href='http://maps-generator.com/'>add google maps to hp</a> <script type='text/javascript' 
+          src='https://maps-generator.com/google-maps-authorization/script.js?id=724293a29f78f1838ee2d0cfab2c4217cc3a2c7d'></script>
+        </div>
+
+        <div class="col-md-3 pl-5">
+          <p>Contact Us:</p>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Name</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Phone</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6><u>About</u></h6>
+          <p class="text-justify">"This seemingly nondescript restaurant has been drawing customers by word of mouth for its meaty and gelatinous boiled pig’s trotters since 2007. The business exploded, and the restaurant operated four additional locations nearby at one point, but chose to just focus on the original location in the name of quality control. Boiled pork belly and chilled buckwheat noodles in kimchi broth are also popular items on the menu. Open till late."</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6><u>More Info</u></h6>
+          <ul class="footer-links">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Contribute</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6><u>Hours</u></h6>
+          <ul class="footer-links">
+            <li><i class="fa fa-check" aria-hidden="true"></i> Mon-Thurs: 11am - 1am</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> Friday: 10am - 3am</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> Saturday: 9am - 3am</li>
+            <li style="color:rgb(199, 67, 67)"><i class="fa fa-times" aria-hidden="true"></i> Sunday: Closed</li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">A Project by Jonathan Kim 2020
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>
+      
+    </script> 
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
